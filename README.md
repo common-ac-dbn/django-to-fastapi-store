@@ -55,5 +55,5 @@ cat /home/<user>/.ssh/<key name>.pub
 
 ```
 ssh -T git@github.com
-git remote set-url origin git@github.com:username/repo.git
+git remote set-url origin git@github.com:common-ac-dbn/django-to-fastapi-store.git
 ```
