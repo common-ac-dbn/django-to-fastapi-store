@@ -2,7 +2,7 @@
 
 git clone https://github.com/common-ac-dbn/django-to-fastapi-store.git
 
-## Base project 
+## -- Base project 
 
 *Download - venv - requirements*
 ```
@@ -56,4 +56,20 @@ cat /home/<user>/.ssh/<key name>.pub
 ```
 ssh -T git@github.com
 git remote set-url origin git@github.com:common-ac-dbn/django-to-fastapi-store.git
+```
+
+## -- Current project
+
+- make venv
+- install requirements
+```
+sudo apt install nginx
+sudo systemctl enable --now nginx
+- install nodejs
+npm create vite@latest frontend -- --template vanilla
+cd frontend
+npm run build
+sudo nano /etc/nginx/sites-available/default
+- config nginx user as user who own frontend folder
+- run nginx - runfastapi - test
 ```
