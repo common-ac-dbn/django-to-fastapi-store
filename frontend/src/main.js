@@ -29,17 +29,17 @@ app.innerHTML = `
     </div>
 `
 
-document.querySelector('#left').addEventListener('click', async () => {
+document.querySelector('#left').addEventListener('click', () => {
     if (index > 0) {
         index--
-        await loadData()
+        loadData()
     }
 })
 
-document.querySelector('#right').addEventListener('click', async () => {
+document.querySelector('#right').addEventListener('click', () => {
     if (index < 2) {
         index++
-        await loadData()
+        loadData()
     }
 })
 
